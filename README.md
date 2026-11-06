@@ -1,3 +1,26 @@
+# Raydius fork: patch notes
+
+This fork carries local changes on top of
+[local-inference-lab/llm-inference-bench](https://github.com/local-inference-lab/llm-inference-bench).
+`deploy` (this branch) is the patch stack plus these notes; `main` mirrors upstream unchanged.
+Stack base: upstream `52216d7` (lil-bench 1.7.1, 2026-11-04). Upstream tip at last check: `52216d7` (2026-11-05).
+Maintenance workflow: [FORK.md](FORK.md).
+
+"Still needed" is judged against upstream `52216d7`.
+
+## Active patches
+
+| Patch | Added | What it does | Still needed |
+| --- | --- | --- | --- |
+| `patch/00-fork-tooling` | 2026-11-05 | [FORK.md](FORK.md), `scripts/fork/{sync,rebase}.sh` (copied from flare-local-inference) and `openspec/` (radflow): the patch-stack workflow | Yes — fork tooling, never upstreamed |
+
+## Retired patches
+
+| Patch | Added | Retired | What it did | Why retired |
+| --- | --- | --- | --- | --- |
+
+---
+
 # llm-inference-bench
 
 LLM inference decode throughput benchmark with a Rich TUI dashboard.
